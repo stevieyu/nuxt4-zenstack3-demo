@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
         });
     }
 
-    return await cTag.findMany({
+    return await cTag.findFirst({
         where: {
             pid: null,
         },
