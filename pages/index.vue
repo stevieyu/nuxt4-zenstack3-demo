@@ -4,3 +4,8 @@
     <NuxtWelcome />
   </div>
 </template>
+<script setup lang="ts">
+const { data } = await useFetch('/api/tags')
+console.log(data.value);
+
+</script>
