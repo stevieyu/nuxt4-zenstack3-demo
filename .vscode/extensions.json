@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "vue.volar",
-        "nicholashsiang.vscode-vue3-snippets"
+        "nicholashsiang.vscode-vue3-snippets",
+        "zenstack.zenstack-v3"
     ]
 }
