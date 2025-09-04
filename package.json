@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "build-cp": "nuxt build --preset=cloudflare_pages",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -14,6 +15,7 @@
     "ps": "prisma studio --schema ./zenstack/schema.prisma"
   },
   "dependencies": {
+    "@libsql/kysely-libsql": "^0.4.1",
     "@zenstackhq/runtime": "next",
     "better-sqlite3": "latest",
     "nuxt": "latest",

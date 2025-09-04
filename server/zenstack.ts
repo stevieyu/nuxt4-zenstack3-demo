@@ -1,10 +1,11 @@
 import { ZenStackClient } from '@zenstackhq/runtime';
 import { schema } from '../zenstack/schema';
-import { SqliteDialect } from 'kysely';
-import SQLite from 'better-sqlite3';
-
+import { LibsqlDialect } from "@libsql/kysely-libsql";
 
 export default new ZenStackClient(schema, {
-    dialect: new SqliteDialect({ database: new SQLite('./zenstack/dev.db') }),
+    dialect: new LibsqlDialect({
+        url: process.env.TURSO_DATABASE_URL || '',
+        authToken: process.env.TURSO_AUTH_TOKEN,
+    }),
     log: ['query', 'error']
 });
