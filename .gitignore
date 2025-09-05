@@ -29,4 +29,5 @@ logs
 #Ignore windsurf AI rules
 .windsurfrules
 
+.wrangler
 *.db
