@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "build-cp": "nuxt build --preset=cloudflare_pages",
     "build-n": "nuxt build --preset=netlify_edge",
+    "build-v": "nuxt build --preset=vercel_edge",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
