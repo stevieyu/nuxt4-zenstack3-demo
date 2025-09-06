@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@libsql/kysely-libsql": "^0.4.1",
+    "@trigger.dev/sdk": "4.0.2",
     "@zenstackhq/runtime": "next",
     "better-sqlite3": "latest",
     "nuxt": "latest",
@@ -26,6 +27,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@trigger.dev/build": "4.0.2",
     "@zenstackhq/cli": "next"
   },
   "optionalDependencies": {
