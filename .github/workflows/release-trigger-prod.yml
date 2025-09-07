@@ -19,7 +19,9 @@ jobs:
           node-version: "24.x"
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          corepack enable
+          pnpm install
 
       - name: 🚀 Deploy Trigger.dev
         env:
