@@ -31,4 +31,5 @@ jobs:
         env:
           TRIGGER_ACCESS_TOKEN: ${{ secrets.TRIGGER_ACCESS_TOKEN }}
         run: |
-          npx trigger.dev deploy
+          pnpm dlx trigger.dev@latest login
+          pnpm dlx trigger.dev@latest deploy
