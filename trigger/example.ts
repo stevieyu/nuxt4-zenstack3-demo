@@ -4,6 +4,7 @@ export const helloWorldTask = task({
   id: "hello-world",
   // Set an optional maxDuration to prevent tasks from running indefinitely
   maxDuration: 300, // Stop executing after 300 secs (5 mins) of compute
+  machine: 'micro',
   run: async (payload: any, { ctx }) => {
     logger.log("Hello, world!", { payload, ctx });
 
